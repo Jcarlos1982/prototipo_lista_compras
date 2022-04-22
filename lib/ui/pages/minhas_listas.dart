@@ -45,19 +45,22 @@ class _MinhasListasPageState extends State<MinhasListasPage> {
                           alignment: WrapAlignment.spaceBetween,
                           children: [
                             Text(' ${widget.listasCompra[index].titulo}'),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Text(
-                                  formatDate(widget.listasCompra[index].data,
-                                      [dd, '/', mm, '/', yyyy]),
-                                  style: TextStyle(fontSize: 10),
-                                ),
-                                Text(
-                                  '${widget.listasCompra[index].listaItensCompra.length.toString()} itens',
-                                  style: TextStyle(fontSize: 10),
-                                ),
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.only(top: 6),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    formatDate(widget.listasCompra[index].data,
+                                        [dd, '/', mm, '/', yyyy]),
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  Text(
+                                    '${widget.listasCompra[index].listaItensCompra.length.toString()} itens',
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                ],
+                              ),
                             )
                           ]),
                       subtitle: Text(widget.listasCompra[index].descricao),
