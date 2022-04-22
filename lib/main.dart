@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lista_compras/ui/pages/home.dart';
 import 'package:lista_compras/ui/pages/lista.dart';
+import 'package:lista_compras/ui/pages/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Minha Lista Plus',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const Home(tittle: 'Minha Lista de Compras'),
+      home: const Splash(),
     );
   }
 }
