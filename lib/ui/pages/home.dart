@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    appController.setListaItensCompra(gerarListaItems(15));
+    appController.setListaItensCompra(gerarListaItems(100));
     appController.setTitlePage(appController.listaItensCompra.value[0].titulo);
     appController
         .setSubTitlePage(appController.listaItensCompra.value[0].descricao);
@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
                 ListaPage(),
                 MinhasListasPage(
                   tittle: 'Minhas Listas de Compra',
-                  listasCompra: gerarListasCompra(10, 20),
+                  listasCompra: gerarListasCompra(200, 100),
                 ),
               ],
             ),

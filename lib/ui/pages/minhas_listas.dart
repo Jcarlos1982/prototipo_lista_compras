@@ -54,7 +54,7 @@ class _MinhasListasPageState extends State<MinhasListasPage> {
                                   style: TextStyle(fontSize: 10),
                                 ),
                                 Text(
-                                  '${widget.listasCompra.length.toString()} itens',
+                                  '${widget.listasCompra[index].listaItensCompra.length.toString()} itens',
                                   style: TextStyle(fontSize: 10),
                                 ),
                               ],

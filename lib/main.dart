@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lista_compras/ui/pages/home.dart';
-import 'package:lista_compras/ui/pages/lista.dart';
 import 'package:lista_compras/ui/pages/splash.dart';
 
 void main() {

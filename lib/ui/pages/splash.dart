@@ -29,8 +29,8 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       body: Center(
         child: SizedBox(
-            height: MediaQuery.of(context).size.width / 2,
-            width: MediaQuery.of(context).size.width / 2,
+            height: MediaQuery.of(context).size.height / 2,
+            width: MediaQuery.of(context).size.height / 2,
             child: Column(children: const [
               Text(
                 'Minha Lista Plus',

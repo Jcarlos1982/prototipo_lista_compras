@@ -20,7 +20,7 @@ List<ItemCompra> gerarListaItems(int quantidade) {
 List<ItemListaCompra> gerarListasCompra(int listas, int itens) {
   List<ItemListaCompra> listasCompra = <ItemListaCompra>[];
 
-  for (var i = 1; i < listas; i++) {
+  for (var i = 0; i < listas; i++) {
     var index = i + 1;
     listasCompra.add(
       ItemListaCompra(
