@@ -41,8 +41,16 @@ class _ListaPageState extends State<ListaPage> {
                         return Column(
                           children: [
                             ListTile(
-                              title: Text(appController
-                                  .listaItensCompra.value[index].titulo),
+                              title: Row(
+                                children: [
+                                  Text(appController
+                                      .listaItensCompra.value[index].titulo),
+                                  Checkbox(
+                                      value: appController.listaItensCompra
+                                          .value[index].concluido,
+                                      onChanged: (value) {}),
+                                ],
+                              ),
                               subtitle: Text(appController
                                   .listaItensCompra.value[index].descricao),
                               leading: const Icon(

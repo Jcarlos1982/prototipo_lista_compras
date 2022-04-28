@@ -64,6 +64,12 @@ class _MinhasListasPageState extends State<MinhasListasPage> {
                             )
                           ]),
                       subtitle: Text(widget.listasCompra[index].descricao),
+                      leading: !widget.listasCompra[index].concluida
+                          ? Icon(
+                              Icons.check,
+                              color: Colors.green,
+                            )
+                          : Icon(Icons.menu),
                       trailing: IconButton(
                         icon: Icon(Icons.edit),
                         onPressed: () {
